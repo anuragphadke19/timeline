@@ -1,9 +1,7 @@
 Timeline::Application.routes.draw do
-  scope "api" do
-    resources :entries
- end
-  
-  root :to => "main#index"
+  get "static_pages/home"
+
+  get "static_pages/help"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
