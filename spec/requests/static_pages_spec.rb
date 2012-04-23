@@ -24,4 +24,12 @@ describe "StaticPages" do
       page.should have_selector('title', text: 'Timeline | About')
     end
   end
+  
+  describe "About Contact Us" do
+    it "should have the content and title Contact Us" do
+      visit '/static_pages/contact_us'
+      page.should have_content('Contact Us')
+      page.should have_selector('title', text: 'Timeline | Contact Us')
+    end
+  end
 end
