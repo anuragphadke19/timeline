@@ -1,0 +1,6 @@
+<h1> Timeline </h1>
+<ul>
+<% for entry in @entries.models: %>
+  <li><%= entry.get('parsed_date')%>&nbsp;<%= entry.get('text')%></li>
+<% end %>
+</ul>
